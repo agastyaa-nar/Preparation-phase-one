@@ -17,7 +17,20 @@
 
 function consonantCounterRecursive(sentences) {
     //code here
+    if (sentences.length === 0) return 0;   
+
+    let hurufPertama = sentences[0].toLowerCase()
+    let count = 0;
+    let consonant = "bcdfghjklmnpqrstvwxyz"
+
+    for (let i = 0; i < consonant.length; i++ ) {
+      if (hurufPertama === consonant[i]) {
+        count++
+        break
+      } 
+    }
     
+    return count + consonantCounterRecursive(sentences.slice(1))
   }
   
   console.log(consonantCounterRecursive('alDi Suka MakAn baksO')) //10
