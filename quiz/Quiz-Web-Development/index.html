@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>My To Do List</h2>
+      <div class="input-group">
+        <input type="text" id="myInput" placeholder="Title..." />
+        <button class="addBtn" onclick="newElement()">Add</button>
+      </div>
+      <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search tasks..." />
+    </div>
+
+    <ul id="myUL">
+      <li>Hit the gym</li>
+      <li class="checked">Going on a date with Nia</li>
+      <li>Hang out with friends</li>
+      <li>Buy some gifts</li>
+      <li>Read a Manhwa</li>
+      <li>Organize task</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
